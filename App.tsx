@@ -66,7 +66,7 @@ function App() {
       <h1 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-cyber-purple mb-2 text-center tracking-tighter drop-shadow-[0_0_10px_rgba(188,19,254,0.5)]">
         ARENA<br/>FRONT-END
       </h1>
-      <p className="text-gray-400 font-mono mb-12 text-sm tracking-widest">VERSÃO DO SISTEMA 3.0.0</p>
+      <p className="text-gray-400 font-mono mb-12 text-sm tracking-widest"> MAIS DE 1.000 PERGUNTAS </p>
 
       <div className="flex flex-col gap-4 w-full max-w-xs">
         <button 
