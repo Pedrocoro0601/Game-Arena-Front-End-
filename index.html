@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -23,12 +22,12 @@
                 card: '#111625',
                 cyan: '#00f3ff',
                 purple: '#bc13fe',
-                orange: '#ff6b00', // HTML
-                blue: '#2965f1',   // CSS
-                yellow: '#f7df1e', // JS
-                ts: '#3178c6',     // TS
-                react: '#61dafb',  // React
-                debug: '#ef4444',  // Debug (Red)
+                orange: '#ff6b00',
+                blue: '#2965f1',
+                yellow: '#f7df1e',
+                ts: '#3178c6',
+                react: '#61dafb',
+                debug: '#ef4444',
               }
             },
             animation: {
@@ -46,21 +45,10 @@
         color: #e2e8f0;
         overflow-x: hidden;
       }
-      /* Custom scrollbar for code blocks */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #111625; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #334155; 
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #475569; 
-      }
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #111625; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #475569; }
       .glass-panel {
         background: rgba(17, 22, 37, 0.7);
         backdrop-filter: blur(12px);
@@ -68,18 +56,11 @@
         border: 1px solid rgba(255, 255, 255, 0.08);
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    
+    <script type="module" src="/src/index.tsx"></script>
+    
   </body>
 </html>
