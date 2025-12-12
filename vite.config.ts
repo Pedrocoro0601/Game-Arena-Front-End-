@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   // 1. Carrega variáveis locais do .env
   const env = loadEnv(mode, process.cwd(), '');
   
-  // 2. Tenta pegar do .env OU do sistema da Vercel (Obrigatório para funcionar online)
+  // 2. Tenta pegar do .env OU do sistema da Vercel
   const apiKey = env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
 
   return {
