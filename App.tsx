@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import QuizGame from './components/QuizGame';
@@ -6,6 +7,7 @@ import { QUESTIONS } from './constants';
 import { AppState, GameConfig, Stack, Difficulty } from './types';
 
 function App() {
+  
   const [appState, setAppState] = useState<AppState>('menu');
   const [config, setConfig] = useState<GameConfig>({ stack: null, difficulty: null });
   const [finalScore, setFinalScore] = useState(0);
@@ -46,7 +48,10 @@ function App() {
         setAppState('selection'); 
     }
   };
-
+  console.log("=== TESTE DE DEBUG ===");
+  console.log("Ambiente:", import.meta.env);
+  console.log("Chave da API via process:", process.env.GEMINI_API_KEY);
+  console.log("=======================");
   const getStackStyle = (stack: Stack) => {
     switch (stack) {
       case 'HTML': return 'hover:border-cyber-orange hover:shadow-[0_0_20px_rgba(255,107,0,0.2)] text-cyber-orange';
@@ -282,3 +287,4 @@ function App() {
 }
 
 export default App;
+
